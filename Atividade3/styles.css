@@ -1,0 +1,242 @@
+/*Mudar fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corprincipal: snow;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+    color:rgb(42, 6, 6);
+    background-color: var(--corprincipal);
+    
+}
+
+main{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.cabeçalho-1 {
+    background-color: beige;
+    color: snow;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav-logo {
+    color: rgb(42, 6, 6);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 12px 0;
+    background-color: #D8A47F;
+    padding: 15px;
+    width: 75%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 2px solid rgb(42, 6, 6);
+
+}
+
+.nav-menu {
+    float: left;
+    padding: 20px 0;
+}
+
+.nav-list {
+    list-style: none;
+    /* remover marcador */
+}
+
+.nav-item {
+    /*itens na horizontal*/
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #D8A47F;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color:rgb(42, 6, 6);
+}
+
+.introduçao{
+    flex: 1;
+    padding: 0;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    background-color: #D8A47F;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 2px solid beige;
+
+}
+
+h2{
+    text-align: center;
+    background-color: #D8A47F;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid beige;
+    margin-top: auto;
+    padding: 10.5px;
+}
+
+.subtitulos{
+    text-align: center;
+    background-color: beige;
+    padding: 12px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+p{
+    text-align: justify; 
+    padding: 12px;  
+}
+
+.conceitos{
+    margin: auto;
+    padding: 70px;
+    text-align: justify;
+}
+
+.ferramentas{
+    margin: auto;
+    padding: 70px;
+    text-align: justify;
+}
+
+.diferenças{
+    margin: auto;
+    padding: 70px;
+    text-align: justify;
+}
+
+.etica{
+    margin: auto;
+    padding: 70px;
+    text-align: justify;
+}
+
+.conclusao{
+    margin: auto;
+    padding: 70px;
+    text-align: justify;
+}
+
+#conceito1, #conceito2, 
+#conceito3, #ferramenta1,
+#ferramenta2, #ferramenta3,
+#diferencas1, #diferencas2,
+#etica1, #etica2, #etica3{
+    border: 2px solid #D8A47F;
+    border-radius: 20px;
+}
+
+#ferramenta1, #ferramenta2{
+    padding: 30px;
+}
+
+.subtitulos-2{
+    text-align: center;
+    background-color: beige;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top: auto;
+    padding: 10.5px;
+}
+
+aside{
+   width: 320px;
+   flex-shrink: 0;
+   background-color: #FFFBE4;
+   border: 1px solid #C9BC8F;
+   border-radius: 15px;
+   padding: 15px;
+}
+
+aside ol{
+    padding-left: 20px;
+    margin: 0;
+}
+
+aside li{
+    margin-bottom: 14px;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: #2A0606;
+}
+
+aside a{
+    text-decoration: none;
+    color: #2A0606;
+}
+
+.referencias li{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+img{
+    border: 5px dashed rgb(42, 6, 6);
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    float: right;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 590px;
+}
+
+footer p {
+    background-color: beige;
+    color: rgb(42, 6, 6);
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#conteudo-princial {
+    display: flex;
+    gap: 30px; 
+    align-items: flex-start;
+}
