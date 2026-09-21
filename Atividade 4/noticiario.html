@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="noticiario.css">
     <title>Portal de Notícias - Horizonte Diário</title>
 </head>
+
 <body>
     <header class="cabeçalho">
         <nav class="nav">
@@ -14,103 +16,161 @@
             </div>
             <div class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#esportes" class="nav-link">Esportes</a>
-                    </li>   
-                    <li class="nav-item">
-                        <a href="#entretenimento" class="nav-link">Entretenimento</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a href="#tecnologia" class="nav-link">Tecnologia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#saude" class="nav-link">Saúde</a>    
-                    </li>
-                    <li class="nav-item">
-                        <a href="#politica" class="nav-link">Política</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#economia" class="nav-link">Economia</a>   
-                    </li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#esportes" class="nav-link">Esportes</a></li>
+                    <li class="nav-item"><a href="#entretenimento" class="nav-link">Entretenimento</a></li>
+                    <li class="nav-item"><a href="#tecnologia" class="nav-link">Tecnologia</a></li>
+                    <li class="nav-item"><a href="#saude" class="nav-link">Saúde</a></li>
+                    <li class="nav-item"><a href="#politica" class="nav-link">Política</a></li>
+                    <li class="nav-item"><a href="#economia" class="nav-link">Economia</a></li>
+                    <li class="nav-item"><a href="#meio-ambiente" class="nav-link">Meio Ambiente</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="container-box">
-        <div class="box a">
-            <h4>Tecnologia</h4> <!--Parte que mostra a categoria -->
-            <h2>Startup lança aplicativo que traduz o miado de gatos em tempo real</h2>
-            <p>Uma equipe de desenvolvedores acaba de lançar o CatTalk, um aplicativo que 
-             utiliza redes neurais para interpretar os diferentes tipos de miados de gatos domésticos. 
-             Segundo os criadores, o algoritmo analisa a frequência e o tom do áudio para indicar 
-             na tela do celular o provável estado emocional do pet. Testes iniciais apontam uma taxa de 
-             precisão de 85%, e o aplicativo já acumula milhares de downloads na primeira semana de lançamento.</p>
-            <img src="noticia1.jpg" alt="Notícia 1">
-        </div>
+    <!-- CONTAINER QUE DIVIDE A PÁGINA EM CONTEÚDO E SIDEBAR -->
+    <div class="main-wrapper">
 
-        <div class="box b">
-            <h4>Esportes</h4>
-            <h2>Liga profissional de eSports anuncia integração de inteligência artificial em arbitragens</h2>
-            <p>A federação internacional de jogos eletrônicos confirmou que a próxima temporada contará com juízes 
-            auxiliares baseados em IA. O software é capaz de processar milhares de quadros por segundo para identificar
-            infrações e validar pontuações instantaneamente. A novidade visa garantir maior precisão nas decisões e evitar 
-            controvérsias durante os torneios mundiais.</p>
-            <img src="noticia2.jpg" alt="Notícia 2">
-        </div>
+        <!-- ÁREA ESQUERDA (AS NOTÍCIAS) -->
+        <main class="content-area">
 
-        <div class="box c">
-            <h4>Saúde</h4>
-            <h2>Estudo revela que meditação diária pode reduzir sintomas de ansiedade em até 40%</h2>
-            <p>Pesquisadores da Universidade de Stanford conduziram um estudo com mais de 500 participantes, 
-            demonstrando que a prática regular de meditação mindfulness por apenas 20 minutos ao dia pode 
-            levar a uma redução significativa nos níveis de ansiedade. Os resultados sugerem que técnicas 
-            de respiração e foco mental podem ser ferramentas eficazes para o bem-estar emocional.</p>
-            <img src="noticia3.jpg" alt="Notícia 3">
-        </div>  
+            <!-- GRID 1: 3 colunas -->
+            <div class="container-box">
+                <div class="box a">
+                    <h4>Tecnologia</h4>
+                    <h2>Startup lança aplicativo que traduz o miado de gatos em tempo real</h2>
+                    <p>Uma equipe de desenvolvedores acaba de lançar o CatTalk, um aplicativo que utiliza redes neurais
+                        para interpretar os diferentes tipos de miados de gatos domésticos. Segundo os criadores, o
+                        algoritmo analisa a frequência e o tom do áudio para indicar na tela do celular o provável
+                        estado emocional do pet. Testes iniciais apontam uma taxa de precisão de 85%, e o aplicativo já
+                        acumula milhares de downloads na primeira semana de lançamento.</p>
+                    <img src="https://midias-totvs.totvs.com/wp-content/uploads/2024/09/startups-exemplos.jpg.webp"
+                        alt="Notícia 1">
+                </div>
 
-        <div class="box d">
-            <h4>Entretenimento</h4>
-            <h2>Festival de Cinema Internacional anuncia vencedores da edição 2024</h2>
-            <p>O Festival de Cinema Internacional revelou os filmes vencedores da edição deste ano, destacando 
-                produções de diversos países. O prêmio de Melhor Filme foi para a obra "Horizontes Distantes", 
-                dirigida por uma cineasta brasileira, enquanto o prêmio de Melhor Direção foi concedido ao diretor 
-                francês Jean-Luc Moreau. A cerimônia contou com a presença de celebridades e críticos renomados do cinema mundial.</p>
-            <img src="noticia4.jpg" alt="Notícia 4">
-        </div>
+                <div class="box b">
+                    <h4>Esportes</h4>
+                    <h2>Liga profissional de eSports anuncia integração de inteligência artificial em arbitragens</h2>
+                    <p>A federação internacional de jogos eletrônicos confirmou que a próxima temporada contará com
+                        juízes auxiliares baseados em IA. O software é capaz de processar milhares de quadros por
+                        segundo para identificar infrações e validar pontuações instantaneamente. A novidade visa
+                        garantir maior precisão nas decisões e evitar controvérsias durante os torneios mundiais.</p>
+                    <img src="https://www.grupovessel.com/wp-content/uploads/2023/07/image-2-1024x544.png"
+                        alt="Notícia 2">
+                </div>
 
-        <div class="box e">
-            <h4>Política</h4>
-            <h2>Governo anuncia novo pacote de medidas econômicas para estimular o crescimento</h2>
-            <p>O governo federal divulgou um conjunto de políticas voltadas para impulsionar a economia nacional, 
-                incluindo incentivos fiscais para pequenas empresas, investimentos em infraestrutura e programas de 
-                capacitação profissional. As medidas visam criar empregos, aumentar a produtividade e fortalecer o 
-                mercado interno, com expectativa de crescimento do PIB nos próximos trimestres.</p>
-            <img src="noticia5.jpg" alt="Notícia 5">
-        </div>
+                <div class="box c">
+                    <h4>Saúde</h4>
+                    <h2>Estudo revela que meditação diária pode reduzir sintomas de ansiedade em até 40%</h2>
+                    <p>Pesquisadores da Universidade de Stanford conduziram um estudo com mais de 500 participantes,
+                        demonstrando que a prática regular de meditação mindfulness por apenas 20 minutos ao dia pode
+                        levar a uma redução significativa nos níveis de ansiedade. Os resultados sugerem que técnicas de
+                        respiração e foco mental podem ser ferramentas eficazes para o bem-estar emocional.</p>
+                    <img src="https://wendellcarvalho.com.br/wp-content/uploads/2023/06/Entenda-como-a-pratica-da-meditacao-auxilia-no-desenvolvimento-da-resiliencia.jpg"
+                        alt="Notícia 3">
+                </div>
 
-        <div class="box f">
-            <h4>Economia</h4>
-            <h2>Mercado financeiro reage positivamente a novas políticas de estímulo econômico</h2>
-            <p>Após o anúncio de medidas de estímulo econômico pelo governo, os mercados financeiros registraram uma 
-                valorização significativa. Investidores demonstraram confiança nas políticas implementadas, resultando em 
-                aumento das ações e fortalecimento da moeda local. Analistas destacam que a estabilidade econômica pode 
-                atrair investimentos estrangeiros e impulsionar o crescimento do setor privado.</p>
-            <img src="noticia6.jpg" alt="Notícia 6">
-        </div>
+                <div class="box d">
+                    <h4>Entretenimento</h4>
+                    <h2>Festival de Cinema Internacional anuncia vencedores da edição 2024</h2>
+                    <p>O Festival de Cinema Internacional revelou os filmes vencedores da edição deste ano, destacando
+                        produções de diversos países. O prêmio de Melhor Filme foi para a obra "Horizontes Distantes",
+                        dirigida por uma cineasta brasileira, enquanto o prêmio de Melhor Direção foi concedido ao
+                        diretor francês Jean-Luc Moreau. A cerimônia contou com a presença de celebridades e críticos
+                        renomados do cinema mundial.</p>
+                    <img src="https://minimundo.com.br/wp-content/uploads/2021/08/Capa-Posts-Mini-Mundo-12.jpeg"
+                        alt="Notícia 4">
+                </div>
 
-        <div class="box h">
-            <img src="noticia7.jpg" alt="Notícia 7">
-            <h4>Saúde</h4>
-            <h2>Nova pesquisa aponta benefícios do consumo moderado de chocolate amargo</h2>
+                <div class="box e">
+                    <h4>Política</h4>
+                    <h2>Governo anuncia novo pacote de medidas econômicas para estimular o crescimento</h2>
+                    <p>O governo federal divulgou um conjunto de políticas voltadas para impulsionar a economia
+                        nacional, incluindo incentivos fiscais para pequenas empresas, investimentos em infraestrutura e
+                        programas de capacitação profissional. As medidas visam criar empregos, aumentar a produtividade
+                        e fortalecer o mercado interno, com expectativa de crescimento do PIB nos próximos trimestres.
+                    </p>
+                    <img src="https://img.magnific.com/fotos-premium/pessoas-de-negocios-na-sala-de-conferencias_449849-51872.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Notícia 5">
+                </div>
+
+                <div class="box f">
+                    <h4>Economia</h4>
+                    <h2>Mercado financeiro reage positivamente a novas políticas de estímulo econômico</h2>
+                    <p>Após o anúncio de medidas de estímulo econômico pelo governo, os mercados financeiros registraram
+                        uma valorização significativa. Investidores demonstraram confiança nas políticas implementadas,
+                        resultando em aumento das ações e fortalecimento da moeda local. Analistas destacam que a
+                        estabilidade econômica pode atrair investimentos estrangeiros e impulsionar o crescimento do
+                        setor privado.</p>
+                    <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/shutterstock_rLcCBI9.jpg"
+                        alt="Notícia 6">
+                </div>
             </div>
+
+            <!-- GRID 2: Destaque -->
+            <div class="container-box-2">
+                <div class="box-2">
+                    <img class="img-7"
+                        src="https://perfectdailygrind.com/wp-content/uploads/2020/04/Hs_5Ce8ecmXodh-AdEVHyT07irPaZ-zAAhYkKYRJgS5CVzHKs0cAAdyeAF9TIgyh4KI5gqYmyuIDwJnf2f9wCdNvJ5WbQOlSoRr5zmmzMalyR1-RQxvlOtTZkJq9G_GPUiVZ6_WX-1-1-1536x1024.jpeg"
+                        alt="Notícia 7">
+                    <h4>Saúde</h4>
+                    <h2>Nova pesquisa aponta benefícios do consumo moderado de chocolate amargo</h2>
+                </div>
+            </div>
+
+            <!-- GRID 3: 4 colunas -->
+            <div class="container-box-3">
+                <div class="box j">
+                    <img class="img-8"
+                        src="https://www.plastico.com.br/wp-content/uploads/2022/09/plastico-reciclado.jpg"
+                        alt="Notícia 8">
+                    <h4>Meio Ambiente</h4>
+                    <h2>Iniciativa global promove reciclagem de plástico em larga escala</h2>
+                </div>
+
+                <div class="box k">
+                    <img class="img-9" src="https://ovicio.com.br/wp-content/uploads/2022/09/20220913-cinema.jpg"
+                        alt="Notícia 9">
+                    <h4>Entretenimento</h4>
+                    <h2>Novo filme estreia em cartaz com grande sucesso</h2>
+                </div>
+
+                <div class="box l">
+                    <img class="img-10"
+                        src="https://blog.ixcsoft.com.br/wp-content/uploads/2021/01/Entenda-o-impacto-da-tecnologia-no-seu-escritorio-de-contabilidade-scaled-1.jpg"
+                        alt="Notícia 10">
+                    <h4>Tecnologia</h4>
+                    <h2>Saiba como usar a tecnologia para melhorar sua produtividade</h2>
+                </div>
+
+                <div class="box m">
+                    <img class="img-11"
+                        src="https://static.vecteezy.com/ti/fotos-gratis/p2/76045993-feliz-e-orgulhoso-frances-atletas-a-comemorar-ganhando-medalhas-para-seus-pais-retrato-do-uma-diverso-grupo-do-esportes-pessoas-com-uma-frances-bandeira-torcendo-e-orgulhoso-do-seus-sucesso-e-vitoria-foto.jpg"
+                        alt="Notícia 11">
+                    <h4>Esportes</h4>
+                    <h2>Equipe nacional conquista ouro em competição internacional</h2>
+                </div>
+            </div>
+        </main>
+
+        <!-- ÁREA DIREITA (BARRA LATERAL / ASIDE) -->
+        <aside class="sidebar-aside">
+            <h3>Últimas Notícias</h3>
+            <ul>
+                <li><a href="#">Novo estudo revela os benefícios da meditação para a saúde mental</a></li>
+                <li><a href="#">Governo anuncia pacote de medidas econômicas para estimular o crescimento</a></li>
+                <li><a href="#">Festival de Cinema Internacional premia filmes de diversos países</a></li>
+                <li><a href="#">Startup lança aplicativo que traduz o miado de gatos em tempo real</a></li>
+                <li><a href="#">Liga profissional de eSports integra inteligência artificial em arbitragens</a></li>
+            </ul>
+        </aside>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Horizonte Diário. Criado por Júlia Ribeiro de Souza. Todos os direitos reservados. </p>
+        <p>&copy; 2026 Horizonte Diário. Criado por Júlia Ribeiro de Souza. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
