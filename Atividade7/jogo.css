@@ -1,0 +1,88 @@
+/* Configuração geral e centralização da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d3436;
+}
+
+/* Caixa principal do jogo */
+main {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Títulos e textos */
+.titulo h1 {
+    font-size: 1.5rem;
+    color: #2f3542;
+    margin-bottom: 10px;
+}
+
+.explicacao h3 {
+    font-size: 1rem;
+    color: #57606f;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/* Estilo dos botões */
+.botao {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.botao button {
+    flex: 1;
+    background-color: #f1f2f6;
+    border: 2px solid #dfe4ea;
+    padding: 12px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2f3542;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Efeito ao passar o mouse ou clicar */
+.botao button:hover {
+    background-color: #74b9ff;
+    color: #ffffff;
+    border-color: #74b9ff;
+    transform: translateY(-2px);
+}
+
+.botao button:active {
+    transform: translateY(0);
+}
+
+/* Caixa de resultado */
+#resultado {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #f1f2f6;
+}
+
+#resultado p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #57606f;
+}
+
+#resultado h2 {
+    font-size: 1.3rem;
+    margin-top: 12px;
+    color: #2ed573;
+}
