@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="pesquisa.css">
+</head>
+
+<body>
+
+    <form onsubmit="return false;">
+        <header>
+            <h2>Seja bem-vindo(a)! Avalie este filme!</h2>
+        </header>
+
+        <div class="poster-container">
+            <img src="Cartaz.jpg" alt="Cartaz do Filme">
+            <button class="btn-zoom" title="Ver imagem inteira" onclick="abrirZoom()">
+                🔍
+            </button>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="txtIdadeUser">Idade:</label>
+            <input type="number" id="txtIdadeUser" placeholder="Digite sua idade">
+        </div>
+
+        <div class="campo-grupo">
+            <label>Gênero:</label>
+            <div class="botoes-grid">
+                <input type="button" value="Feminino" onclick="gen(1)">
+                <input type="button" value="Masculino" onclick="gen(2)">
+                <input type="button" value="Outros" onclick="gen(3)">
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <label>Avaliação:</label>
+            <div class="botoes-grid grid-4">
+                <input type="button" value="Ótimo" onclick="aval(4)">
+                <input type="button" value="Bom" onclick="aval(3)">
+                <input type="button" value="Regular" onclick="aval(2)">
+                <input type="button" value="Péssimo" onclick="aval(1)">
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <input type="button" value="Registrar Resposta" onclick="registrarDados()" class="btn-submit">
+        </div>
+
+        <p id="mensagemStatus"></p>
+        <div id="resultadoFinal"></div>
+    </form>
+
+    <!-- Modal de Zoom da Imagem -->
+    <div id="modalZoom" class="modal-zoom">
+        <span class="btn-fechar" onclick="fecharZoom()">&times;</span>
+        <img class="modal-conteudo" id="imgZoom" alt="Cartaz Ampliado">
+    </div>
+
+    <script src="pesquisa.js"></script>
+</body>
+
+</html>
